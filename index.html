@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        
+        <title>DSM Label</title>
+        
+        <meta name="description" content="DSM Label">
+        <meta name="author" content="Jane">
+        
+        <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+        
+        <link rel="stylesheet" href="./fonts/webfontkit-20160531-174103/stylesheet.css">
+        
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <style>
+            @font-face {
+                font-family: led-counter-7;
+                src: url(./fonts/led_counter-7.ttf);
+            }
+            
+            /* Generic Classes */
+            
+            .label {
+                font-family: cooper_hewittbold;
+                font-size: 1.8rem;
+                font-weight: bold;
+                letter-spacing: -0.02rem;
+                text-transform: uppercase;
+            }
+            
+            .dot-matrix {
+                font-family: led-counter-7;
+                font-size: 1.9rem;
+                letter-spacing: 0.13rem;
+            }
+            
+            /* Place Holders */
+            
+            #label {
+                border: medium solid black;
+                
+                /* For Debugging */
+                background-image: url(./img/firewallsticker_flat.jpg);
+                /* /debugging */
+                
+                background-size: cover;
+                height: 442px;
+                width: 730px;
+                background-color: black;
+            }
+            
+                #fabricated {
+                    border: medium solid white;
+                    border-radius: 2rem;
+                    height: 98.6%;
+                    width: 99.2%;
+                    background-color: white;
+                }
+                
+                /* Upper Text */
+                
+                #upper-text > img {
+                    margin: 2rem 0 1.4rem 16.3rem;
+                    width: 11.4rem;
+                }
+                
+                /* Right Text */
+                
+                #right-text {
+                    display: inline-block;
+                    margin-left: 3rem;
+                    width: 13rem;
+                }
+                
+                    #short-vin {
+                        text-align: center;
+                    }
+
+                    #unknown-1,
+                    #unknown-2 {
+                        display: inline-block;
+                    }
+                    
+                    #unknown-2 {
+                        margin-left: 1.2rem;
+                    }
+                
+                /* Middle Text */
+                
+                #middle-text {
+                    margin-top: 2rem;
+                }
+                
+                #middle-text > div {
+                    height: 2.1rem;
+                }
+
+                #middle-text .label {
+                    text-align: right;
+                    width: 10.95rem;
+                }
+                
+                #middle-text .label,
+                #middle-text .dot-matrix {
+                    display: inline-block;
+                }
+                
+                #middle-text .dot-matrix {
+                    margin-left: 3rem;
+                }
+                
+                    #ext,
+                    #engine,
+                    #color-trim-1,
+                    #color-trim-2 {
+                        display: inline-block;
+                        width: 20rem;
+                    }
+                    
+                    #ext .label {
+                        width: 4.8rem;
+                    }
+                    
+                    #color-trim-2 .dot-matrix {
+                        margin-left: 9.5rem;
+                    }
+                
+                /* Bottom Text */
+                
+                #bottom-text {
+                    margin-top: 1%;
+                }
+                
+                #bottom-text .dot-matrix {
+                    height: 25pt;
+                }
+                
+                #bottom-text > div {
+                    display: inline-block;
+                }
+                
+                    #col-1 {
+                        text-align: right;
+                        width: 28%;
+                    }
+                    
+                    #col-2 {
+                        width: 57%;
+                    }
+                    
+                    #col-2 .dot-matrix {
+                        display: inline-block;
+                    }
+                    
+                    #col-2 > div {
+                        text-align: right;
+                    }
+                    
+                        #row-2 div {
+                            margin-left: 9.3%;
+                        }
+                        
+                        #row-2 div:last-child {
+                            margin-left: 4.6%;
+                        }
+                                    
+                            #unknown-4 {
+                                margin-right: 5%;
+                            }
+                            
+                            #unknown-5 {
+                                margin-right: 9%;
+                            }
+                        
+                    #row-3 {
+                        margin-left: 11%;
+                    }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="label">
+            <div id="fabricated">
+                <div id="upper-text">
+                    <img src="./img/DSM_Emblem.png" />
+                    
+                    <div id="right-text">
+                        <div id="short-vin" class="dot-matrix" data-length="6">
+                            123456
+                        </div>
+                        
+                        <div id="unknown-1" class="dot-matrix"  data-length="4">
+                            1234
+                        </div>
+                        
+                        <div id="unknown-2" class="dot-matrix"  data-length="5">
+                            12345
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="middle-text">
+                    <div id="model">
+                        <div class="label">
+                            Model
+                        </div>
+                        <div class="dot-matrix" data-length="11">
+                            12345678901
+                        </div>
+                    </div>
+                    
+                    <div id="engine">
+                        <div class="label">
+                            Engine
+                        </div>
+                        <div class="dot-matrix" data-length="4">
+                            1234
+                        </div>
+                    </div>
+                    
+                    <div id="ext">
+                        <div class="label">
+                            Ext
+                        </div>
+                        <div class="dot-matrix" data-length="3">
+                            123
+                        </div>
+                    </div>
+                    
+                    <div id="trans">
+                        <div class="label">
+                            Trans
+                        </div>
+                        <div class="dot-matrix" data-length="5">
+                            12345
+                        </div>
+                    </div>
+                    
+                    <div id="color-trim-1">
+                        <div class="label">
+                            Color Trim
+                        </div>
+                        <div class="dot-matrix" data-length="3">
+                            123
+                        </div>
+                    </div>
+                    
+                    <div id="color-trim-2">
+                        <div class="dot-matrix" data-length="3">
+                            123
+                        </div>
+                    </div>
+                    
+                    <div id="opt">
+                        <div class="label">
+                            Opt
+                        </div>
+                        <div class="dot-matrix" data-length="3">
+                            123
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- non-label data -->
+                
+                <div id="bottom-text">
+                    <div id="col-1">
+                        <div id="unknown-3" class="dot-matrix" data-length="3">
+                            123
+                        </div>
+                        
+                        <div id="paint" class="dot-matrix" data-length="3">
+                            123
+                        </div>
+                        
+                        <div id="unknown-10" class="dot-matrix"  data-length="6">
+                            123456
+                        </div>
+                    </div>
+                    
+                    <div id="col-2">
+                        <div id="row-1">
+                            <div id="unknown-4" class="dot-matrix"  data-length="12">
+                                123456789012
+                            </div>
+                            
+                            <div id="unknown-5" class="dot-matrix"  data-length="3">
+                                123
+                            </div>
+                            
+                            <div id="market-register" class="dot-matrix"  data-length="1">
+                                1
+                            </div>
+                        </div>
+                        
+                        <div id="row-2">
+                            <div id="unknown-6" class="dot-matrix"  data-length="3">
+                                123
+                            </div>
+                            
+                            <div id="unknown-7" class="dot-matrix"  data-length="3">
+                                123
+                            </div>
+                            
+                            <div id="unknown-8" class="dot-matrix"  data-length="4">
+                                1234
+                            </div>
+                            
+                            <div id="unknown-9" class="dot-matrix"  data-length="3">
+                                123
+                            </div>
+                        </div>
+                        
+                        <div id="row-3">
+                            <div id="full-vin" class="dot-matrix"  data-length="17">
+                                12345678901234567
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="inputs">
+            <div>
+                <label for="label-debug">
+                    Reveal real label for debugging:
+                </label>
+                <input id="label-debug" type="button" value="Toggle" onclick="dsmLabelNS.labelDebugToggle();" />
+            </div>
+            
+            <div>
+                <label for="vin">
+                    VIN:
+                </label>
+                <input id="vin" type="text" length="17" onkeyup="dsmLabelNS.updateVin(this);" />
+            </div>
+            
+            <div>
+                <label for="model-in">
+                    Model:
+                </label>
+                <input id="model-in" type="text" length="11" onkeyup="dsmLabelNS.updateModel(this);" />
+            </div>
+            
+            <div>
+                <label for="engine-in">
+                    Engine:
+                </label>
+                <select id="engine-in" onchange="dsmLabelNS.updateEngine(this);">
+                    <option value="4G63">
+                        4G63
+                    </option>
+                    <option value="4G37">
+                        4G37
+                    </option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="market-register-in">
+                    Market Register:
+                </label>
+                <select id="market-register-in" onchange="dsmLabelNS.updateMarketRegister(this);">
+                    <option value="U">
+                        USA
+                    </option>
+                    <option value="C">
+                        Canada
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <!-- <script src="js/scripts.js"></script> -->
+        
+        <script>
+            // Namespace
+            window.dsmLabelNS           = {};
+            
+            dsmLabelNS.maxLengthVin     = 17;
+            dsmLabelNS.maxLengthModel   = 11;
+            
+            dsmLabelNS.colors           = {
+                null:   '',
+                clear:  'transparent'
+                /* For when playing with `getComputedStyle`
+                white:  'rgb(255, 255, 255)'
+                */
+            };
+            
+            
+            dsmLabelNS.labelDebugToggle = function() {
+                var targetId        = 'fabricated';
+                var targetElement   = document.getElementById(targetId);
+                var targetStyleInt  = targetElement.style;
+                
+                /* For when playing with externally added styles
+                var targetStyleExt  = window.getComputedStyle(targetElement, null);
+                */
+
+                if(this.colors.null == targetStyleInt['background-color']) {
+                    targetStyleInt['background-color'] = this.colors.clear;
+                }
+                else {
+                    targetStyleInt['background-color'] = this.colors.null;
+                }
+                
+                // No bubbling
+                return false;
+            };
+            
+            
+            dsmLabelNS.updateVin = function(e) {
+                if(e.value.length < this.maxLengthVin + 1) {
+                    var targetId1      = 'full-vin';
+                    var targetId2      = 'short-vin';
+                    var targetElement1 = document.getElementById(targetId1);
+                    var targetElement2 = document.getElementById(targetId2);
+                    
+                    targetElement1.innerHTML = e.value;
+                    targetElement2.innerHTML = e.value.substr(-6);
+                    
+                    // No bubbling
+                    return false;
+                }
+            };
+            
+            
+            dsmLabelNS.updateModel = function(e) {
+                if(e.value.length < this.maxLengthModel + 1) {
+                    var targetSelector  = '#model .dot-matrix';
+                    var targetElement   = document.querySelector(targetSelector);
+                }
+                
+                targetElement.innerHTML = e.value;
+            };
+            
+            
+            dsmLabelNS.updateEngine = function(e) {
+                var targetSelector  = '#engine .dot-matrix';
+                var targetElement   = document.querySelector(targetSelector);
+                
+                targetElement.innerHTML = e.value;
+            };
+            
+            
+            dsmLabelNS.updateMarketRegister = function(e) {
+                var targetId        = '#market-register.dot-matrix';
+                var targetElement   = document.querySelector(targetId);
+                
+                targetElement.innerHTML = e.value;
+            };
+            
+            
+            (dsmLabelNS.updateDefaults = function() {
+                dsmLabelNS.updateEngine(document.getElementById('engine-in'));
+                dsmLabelNS.updateMarketRegister(document.getElementById('market-register-in'));
+            })();
+            
+        </script>
+    </body>
+
+</html>
